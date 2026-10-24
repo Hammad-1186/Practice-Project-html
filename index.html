@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+Tells the browser this is an HTML5 document.
+<html>
+The root element that wraps everything. The lang attribute sets the page language.
+<head>
+
+<title>Page title shown in the browser tab</title>
+</head>
+<body>
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+Result:
+
+Heading 1
+Heading 2
+Heading 3
+Heading 4
+Heading 5
+Heading 6
+4. Text tags
+<p>This is a paragraph.</p>
+<strong>Important (bold)</strong>
+<em>Emphasized (italic)</em>
+<mark>Highlighted</mark>
+<small>Small print</small>
+<del>Deleted</del> <ins>Inserted</ins>
+H<sub>2</sub>O and x<sup>2</sup>
+Line one<br>Line two
+<hr>
+<blockquote>A quoted block of text.</blockquote>
+<code>inline code</code>
+<pre>Preformatted   text keeps its spaces.</pre>
+Result:
+
+This is a paragraph.
+
+Important (bold)
+Emphasized (italic)
+Highlighted
+Small print
+Deleted Inserted
+H2O and x2
+
+Line one
+Line two
+
+A quoted block of text.
+inline code
+
+Preformatted   text keeps its spaces.
+5. Links
+The anchor tag <a> creates a hyperlink. The href attribute holds the destination.
+
+<a href="https://developer.mozilla.org">Visit MDN</a>
+<a href="https://developer.mozilla.org" target="_blank">Open in new tab</a>
+<a href="#structure">Jump to a section on this page</a>
+<a href="mailto:hello@example.com">Send an email</a>
+Result:
+
+Visit MDN
+Open in new tab
+Jump to a section on this page
+Send an email
+6. Images
+The <img> tag is void (no closing tag). Always include alt text for accessibility.
+
+<img src="photo.jpg" alt="A description of the photo" width="300">
+Result (a small built-in sample image):
+
+Orange box with the text HTML5
+Use <figure> and <figcaption> to add a caption:
+
+Blue box with the text Tags
+Figure 1: An image with a caption.
+7. Lists
+<!-- Unordered list -->
+<ul>
+  <li>Apple</li>
+  <li>Banana</li>
+</ul>
+
+<!-- Ordered list -->
+<ol>
+  <li>First</li>
+  <li>Second</li>
+</ol>
+
+<!-- Description list -->
+<dl>
+  <dt>HTML</dt>
+  <dd>HyperText Markup Language</dd>
+</dl>
+Result:
+
+Apple
+Banana
+First
+Second
+HTML
+HyperText Markup Language
+8. Tables
+<table border="1">
+  <caption>Fruit prices</caption>
+  <thead>
+    <tr><th>Fruit</th><th>Price</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Apple</td><td>$1</td></tr>
+    <tr><td>Banana</td><td>$2</td></tr>
+  </tbody>
+</table>
+Result:
+
+Fruit prices
+Fruit	Price
+Apple	$1
+Banana	$2
+<table>: the table container
+<tr>: a table row
+<th>: a header cell
+<td>: a data cell
+<thead>, <tbody>, <tfoot>: group rows into sections
+9. Forms
+Forms collect input from visitors. Each <label> is linked to an input using for and id.
+
+<form action="/submit" method="post">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name">
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email">
+
+  <label for="pw">Password:</label>
+  <input type="password" id="pw" name="pw">
+
+  <input type="radio" name="size" value="s"> Small
+  <input type="radio" name="size" value="l"> Large
+
+  <input type="checkbox" name="news"> Subscribe
+
+  <select name="country">
+    <option>Pakistan</option>
+    <option>India</option>
+  </select>
+
+  <textarea name="msg" rows="3"></textarea>
+
+  <button type="submit">Send</button>
+</form>
+Result (this demo form doesn’t send data anywhere):
+
+Sample form
+Name: 
+Your name
+
+Email: 
+you@example.com
+
+Password: 
+
+Size:  Small  Large
+
+ Subscribe
+
+Country: 
+Pakistan
+
+Message:
+
+
+Send Reset
+10. Semantic layout tags
+These tags describe the meaning of each part of a page, which helps search engines and screen readers.
+
+Tag	Purpose
+<header>	Introductory content or the top of a page or section
+<nav>	A block of navigation links
+<main>	The main content of the page (use once)
+<section>	A themed group of content
+<article>	Self-contained content, like a blog post
+<aside>	Side content related to the main content
+<footer>	Footer of a page or section
+<div>	A generic block container with no meaning
+<span>	A generic inline container with no meaning
+11. Audio and video
+<audio controls>
+  <source src="sound.mp3" type="audio/mpeg">
+  Your browser does not support audio.
+</audio>
+
+<video controls width="320">
+  <source src="movie.mp4" type="video/mp4">
+  Your browser does not support video.
+</video>
+The controls attribute adds play, pause and volume buttons. Text between the tags is shown only if the browser can’t play the file.
+
+12. Other useful tags
+Click to expand:
+
+What is an attribute?
+Progress: 
+
+Meter: 
+
+Abbreviation: HTML (hover to see the full name)
+
+Comments are invisible to visitors: <!-- This is a comment -->
+
+<details><summary>Title</summary>Hidden text</details>
+<progress value="70" max="100"></progress>
+<meter value="0.6"></meter>
+<abbr title="HyperText Markup Language">HTML</abbr>
+That’s the basics! Next, try writing your own page, then learn CSS for styling and JavaScript for behavior.
+
+Back to top
+
+</body>
+</html
